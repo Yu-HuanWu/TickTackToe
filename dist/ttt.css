@@ -152,6 +152,7 @@ h1::after {
 
 h2 {
     position: relative;
+    bottom: 50px;
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: calc(20px + 5vw);
     font-weight: 700;
@@ -163,35 +164,15 @@ h2 {
     white-space: nowrap;
     filter: blur(0.007em);
     animation: shake 2.5s linear forwards;
-}
-
-h2 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
-            clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+    padding: 0;
 }
 
 h2::before,
 h2::after {
     content: attr(data-text);
     position: absolute;
-    top: 0;
+    top: -10;
     left: 0;
-}
-
-h2::before {
-    animation: crack1 2.5s linear forwards;
-    -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
-}
-
-h2::after {
-    animation: crack2 2.5s linear forwards;
-    -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
-            clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
 }
 
 @keyframes shake {
