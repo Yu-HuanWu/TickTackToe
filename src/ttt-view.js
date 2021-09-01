@@ -46,7 +46,7 @@ class View {
       // square.style.color= 'red';
       square.innerHTML = "<img src='assets/tick.png' alt='tick' width='80' height='80'>";
     } else {
-      square.innerHTML = "<img src='TickTackToe/assets/tack.png' alt='tack' width='80' height='80'>";
+      square.innerHTML = "<img src='assets/tack.png' alt='tack' width='80' height='80'>";
     }
 
     function tickToe() {
