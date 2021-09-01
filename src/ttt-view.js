@@ -50,11 +50,11 @@ class View {
     }
 
     function tickToe() {
-      window.document.write("<head><link rel='stylesheet' type='text/css' href='./ttt.css'></head> <body> <img src='../assets/toe.png'> <h3 style='color:green;'>Yay Tick wins a toe!</h3><br><h2>Play Again in...</h2><h2 id='timer'></h2><script>var countDownDate = new Date().getTime()+5000;var x = setInterval(function() { var now = new Date().getTime(); var distance = countDownDate - now; var seconds = Math.floor((distance/1000)); document.getElementById('timer').innerHTML = seconds + ' sec '; if (distance < 0) {clearInterval(x); document.getElementById('timer').innerHTML = 'READY!';}}, 1000);</script></body>");
+      window.document.write("<head><link rel='stylesheet' type='text/css' href='../dist/ttt.css'></head> <body> <img src='../assets/toe.png'> <h3 style='color:green;'>Yay Tick wins a toe!</h3><br><h2>Play Again in...</h2><h2 id='timer'></h2><script>var countDownDate = new Date().getTime()+5000;var x = setInterval(function() { var now = new Date().getTime(); var distance = countDownDate - now; var seconds = Math.floor((distance/1000)); document.getElementById('timer').innerHTML = seconds + ' sec '; if (distance < 0) {clearInterval(x); document.getElementById('timer').innerHTML = 'READY!';}}, 1000);</script></body>");
     }
 
     function tackToe() {
-      window.document.write("<head><link rel='stylesheet' type='text/css' href='./ttt.css'></head> <body> <img src='../assets/toe.png'> <h3 style='color:red;'>Yay Tack wins a toe!</h3><br><h2>Play Again in...</h2><h2 id='timer'></h2><script>var countDownDate = new Date().getTime()+5000;var x = setInterval(function() { var now = new Date().getTime(); var distance = countDownDate - now; var seconds = Math.floor((distance/1000)); document.getElementById('timer').innerHTML = seconds + ' sec '; if (distance < 0) {clearInterval(x); document.getElementById('timer').innerHTML = 'READY!';}}, 1000);</script></body>");
+      window.document.write("<head><link rel='stylesheet' type='text/css' href='../dist/ttt.css'></head> <body> <img src='../assets/toe.png'> <h3 style='color:red;'>Yay Tack wins a toe!</h3><br><h2>Play Again in...</h2><h2 id='timer'></h2><script>var countDownDate = new Date().getTime()+5000;var x = setInterval(function() { var now = new Date().getTime(); var distance = countDownDate - now; var seconds = Math.floor((distance/1000)); document.getElementById('timer').innerHTML = seconds + ' sec '; if (distance < 0) {clearInterval(x); document.getElementById('timer').innerHTML = 'READY!';}}, 1000);</script></body>");
     }
 
     let winner= this.game.winner();
